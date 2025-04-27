@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 360px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .login-container:hover {
+            transform: translateY(-3px);
+        }
+
+        .back-link {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            font-size: 14px;
+            color: #74ebd5;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #58c8ba;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: #444;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #74ebd5;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #74ebd5;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #58c8ba;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        a {
+            color: #74ebd5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #58c8ba;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <a href="index.html" class="back-link">← Back</a>
+        <div class="login-form">
+            <h2>Welcome Back</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username"><b>Student Id</b></label>
+                    <input type="text" id="username" name="username" placeholder="Enter your Student Id" required>
+                </div>
+                <div class="input-group">
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
